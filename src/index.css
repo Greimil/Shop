@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+    height: 100%;
+    background-color: #2D3033;
+    color: white;
+}
+
+.home-section {
+    
+    background-image: url("./assets/graficaBG-modified.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}

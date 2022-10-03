@@ -1,19 +1,23 @@
 import React from 'react'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Home } from './Home'
+import {Shop} from "./Shop"
 
 
-export const Wrapper = () => {
+
+const Wrapper = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
         <Routes>
-
+               
                 <Route path='/' element={<Home/>} />
-                <Route path='/products' element={<Products/>} />
+                <Route path='/tienda' element={<Shop/>} />
         
 
 
         </Routes>
-    </HashRouter>
+    </BrowserRouter>
   )
 }
+
+export default Wrapper
