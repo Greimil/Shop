@@ -9,7 +9,7 @@ export const NavBar = () => {
   return (
     <nav
       name="nav"
-      className="bg-blackPrimary text-white  flex justify-around h-16 md:h-20 items-center"
+      className="bg-blackPrimary text-white  flex justify-between md:paddings h-16 md:h-20 items-center"
     >
       <div className="flex gap-16">
         <h2 className="text-seconday md:text-1xl font-bold" >PC Componentes</h2>
@@ -19,7 +19,7 @@ export const NavBar = () => {
           <li className="cursor-pointer" ><Link>Nosotros</Link></li>
           <li className="cursor-pointer" >
             <div className="flex" >
-              <input type="text" placeholder="Buscar"/>
+              <input type="text" className="text-black" placeholder="Buscar"/>
                 
             </div>
           </li>

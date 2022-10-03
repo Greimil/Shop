@@ -1,6 +1,6 @@
 import { screen, render, cleanup } from "@testing-library/react";
 import { describe, it , afterEach, beforeEach, expect} from "vitest";
-import  GridShop  from "./GridShop";
+import  {GridShop}  from "./GridShop";
 
 describe('Grid shop component', () => { 
      afterEach(cleanup)

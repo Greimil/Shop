@@ -8,11 +8,24 @@ html, body, #root {
     color: white;
 }
 
-.home-section {
-    
-    background-image: url("./assets/graficaBG-modified.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    
+
+@layer components {
+    .btnRed{
+        border: 2px solid #C70000;
+        padding: 12px 24px; 
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        
+    }
+
+    .btnRed:hover {
+        background: #C70000;
+    }
+
+    .paddings {
+        padding-left: 128px; 
+        padding-right: 128px;
+    }
+
 }

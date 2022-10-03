@@ -25,7 +25,7 @@ export const Home = () => {
               Disfruta del mejor rendimiento, con la nueva RTX 3090 al menor
               precio
             </p>
-            <Link to="/tienda" > <button  className="border-seconday border-2 w-40 pl-6 pr-6 pt-3 pb-3 hover:bg-seconday hover:text-black  transition-all" >Ver Tienda</button> </Link>
+            <Link to="/tienda" > <button  className="w-40 pl-6 pr-6 pt-3 pb-3 btnRed hover:text-black  " >Ver Tienda</button> </Link>
           </div>
         </div>
         <div className="bg-blackPrimary p-3 md:p-8 " >
