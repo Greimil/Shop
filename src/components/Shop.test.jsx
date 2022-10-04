@@ -31,7 +31,7 @@ describe("Shop component", () => {
     user.click(btn)
 
     expect( await screen.findByText(/procesadores/i)).toBeInTheDocument()
-    screen.debug()
+   
   });
 
 
@@ -41,8 +41,8 @@ describe("Shop component", () => {
     const user = userEvent.setup()
     user.click(btn)
 
-    expect( await screen.findByText(/Las mas modernas y rapidas laptops del mercado, para que puedas disfrutar de tus video juegos favoritos a altas tasas de refresco y con la mayor fluidez posible/i)).toBeInTheDocument()
-    screen.debug()
+    expect( await screen.findByText(/Las mas modernas y rápidas laptops del mercado, para que puedas disfrutar de tus video juegos favoritos a altas tasas de refresco y con la mayor fluidez posible/i)).toBeInTheDocument()
+    
   });
   
 

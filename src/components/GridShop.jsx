@@ -12,7 +12,7 @@ export const GridShop = (props) => {
       {cells.map((current) => {
         return (
           <div key={nanoid()} role="cell" className="  h-[332px] cursor-pointer  ">
-            <img className="m-auto " src={current[1].link} alt="" />
+            <img className="m-auto  w-60 h-60 object-cover" src={current[1].link} alt="" />
             <figcaption className="text-center  " >{current[1].descrip}</figcaption>
              <strong className="font-semibold text-center   block " >{current[1].price}</strong>
           </div>

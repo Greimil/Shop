@@ -96,7 +96,60 @@
                 }
                
             }
+        }, 
+        "laptop": {
+            "h2": "Laptops", 
+            "p": "Las mas modernas y rápidas laptops del mercado, para que puedas disfrutar de tus video juegos favoritos a altas tasas de refresco y con la mayor fluidez posible",
+            "imgs": {
+                "img1": {
+                    "link": "./src/assets/ProductosImgs/lapto1.png", 
+                    "descrip": "Lenovo Legion 5", 
+                    "price": "$680"  
+                },
+
+                "img2": {
+                    "link": "./src/assets/ProductosImgs/lapto2.png", 
+                    "descrip": "Lenovo IdeaPad Gaming", 
+                    "price": "$710"
+                }, 
+                "img3": {
+                    "link": "./src/assets/ProductosImgs/lapto3.png", 
+                     "descrip": "Acer Predator Helios ", 
+                    "price": "$720"
+                }, 
+                "img4": {
+                    "link": "./src/assets/ProductosImgs/lapto4.png", 
+                     "descrip": "Lenovo Legion 5 Laptop", 
+                    "price": "$899"
+                },  
+                "img5": {
+                    "link": "./src/assets/ProductosImgs/lapto5.png", 
+                    "descrip": "MSI Crosshair 15", 
+                    "price": "$900"  
+                },
+
+                "img6": {
+                    "link": "./src/assets/ProductosImgs/lapto6.png", 
+                    "descrip": "MSI GF65 Laptop", 
+                    "price": "$999"
+                }, 
+                "img7": {
+                    "link": "./src/assets/ProductosImgs/lapto7.png", 
+                     "descrip": "Lenovo Legion 7 Laptop Gaming", 
+                    "price": "$1200"
+                }, 
+                "img8": {
+                    "link": "./src/assets/ProductosImgs/lapto8.png", 
+                     "descrip": "Acer Nitro 5 Laptop Gaming", 
+                    "price": "$1420"
+                }
+               
+            }
         }
+
+
+
+
 
     }
 }

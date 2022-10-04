@@ -40,9 +40,9 @@ export const Shop = () => {
       <div className="md:paddings pt-12 pb-12">
         <div className=" flex md:justify-between">
           <div className="flex  flex-wrap justify-center items-center  gap-2 ">
-            <button className="btnRed  text-sm bg-black pl-2 pr-2 ">GPU</button>
+            <button onClick={()=> {setglobalItems("gpu")}} className="btnRed  text-sm bg-black pl-2 pr-2 ">GPU</button>
             <button onClick={()=> {setglobalItems("cpu")}}  className="btnRed text-sm pl-2 pr-2">CPU</button>
-            <button className="btnRed text-sm pl-2 pr-2">Laptops</button>
+            <button onClick={()=> {setglobalItems("laptop")}} className="btnRed text-sm pl-2 pr-2">Laptops</button>
             <button className="btnRed text-sm pl-2 pr-2">Escritorio</button>
           </div>
           <div className="flex  items-center justify-end  flex-row  gap-3">
@@ -70,7 +70,7 @@ export const Shop = () => {
         </div>
       </div>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   );
 };
