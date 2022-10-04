@@ -12,7 +12,7 @@ export const NavBar = () => {
       className="bg-blackPrimary text-white  flex justify-between md:paddings h-16 md:h-20 items-center"
     >
       <div className="flex gap-16">
-        <h2 className="text-seconday md:text-1xl font-bold" >PC Componentes</h2>
+        <h2 className="text-seconday md:text-1xl font-bold cursor-pointer" > <Link to="/" >PC Componentes</Link></h2>
         <ul role="ul" className=" hidden md:flex  gap-3">
           <li className="cursor-pointer" > <Link to="/tienda" >Tienda</Link></li>
           <li className="cursor-pointer" ><Link>Historias</Link></li>

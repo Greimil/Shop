@@ -31,7 +31,7 @@ describe('NavBar Component', () => {
 
     it('Should have 4 links ', () => {
         
-       expect(screen.getAllByRole("link").length).toBe(3)
+       expect(screen.getAllByRole("link").length).toBe(4)
 
     });
     

@@ -1,4 +1,5 @@
 import { screen, render, cleanup } from "@testing-library/react";
+import userEvent from "@testing-library/user-event"
 import { describe, it, afterEach, beforeEach, expect } from "vitest";
 import { Shop } from "./Shop";
 
@@ -24,7 +25,17 @@ describe("Shop component", () => {
     );
   });
 
-  it("should have 5 buttons", () => {
-    expect(screen.getAllByRole("button").length).toBe(5);
+  it('Should have change category, imgs and description of category when the user click on one link', async () => {
+    const  btn = screen.getByRole('button', {  name: /cpu/i})
+    const user = userEvent.setup()
+    user.click(btn)
+
+    expect( await screen.findByText(/procesadores/i)).toBeInTheDocument()
+    screen.debug()
   });
+  
+
+  // it("should have 5 buttons", () => {
+  //   expect(screen.getAllByRole("button").length).toBe(14);
+  // });
 });
