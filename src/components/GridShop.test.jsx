@@ -5,7 +5,8 @@ import  {GridShop}  from "./GridShop";
 describe('Grid shop component', () => { 
      afterEach(cleanup)
      beforeEach(()=> {
-        render(<GridShop/>)
+        
+        render(<GridShop  />)
     })
     
 

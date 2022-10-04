@@ -11,13 +11,21 @@ import data from "./categories.json"
 
 export const Shop = () => {
   
-
-  const [items, setItems] = useState(data.categories.gpu)
+  const [btns, setbtns] = useState([])
   
-  const setglobalItems = (item) => {
+  
+  const [items, setItems] = useState(data.categories.gpu)
+  const setglobalItems = (item, idx) => {
 
     setItems(data.categories[item])
+    const newArr = [...btns.filter((current) => !current ) ]
+    setbtns()
   }
+
+ 
+
+
+
   
   return (
     <>

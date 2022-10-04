@@ -33,6 +33,17 @@ describe("Shop component", () => {
     expect( await screen.findByText(/procesadores/i)).toBeInTheDocument()
     screen.debug()
   });
+
+
+
+  it('Should have change category, imgs and description of category when the user click on one link', async () => {
+    const  btn = screen.getByRole('button', {  name: /laptops/i})
+    const user = userEvent.setup()
+    user.click(btn)
+
+    expect( await screen.findByText(/Las mas modernas y rapidas laptops del mercado, para que puedas disfrutar de tus video juegos favoritos a altas tasas de refresco y con la mayor fluidez posible/i)).toBeInTheDocument()
+    screen.debug()
+  });
   
 
   // it("should have 5 buttons", () => {

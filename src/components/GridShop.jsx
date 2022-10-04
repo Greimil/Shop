@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from "react";
 import { nanoid } from "nanoid";
-
+import data from "./categories.json"
 
 export const GridShop = (props) => {
   const {Imgs} = props
   const cells = Object.entries(Imgs);
-
 
 
   return (
@@ -22,4 +21,9 @@ export const GridShop = (props) => {
     </div>
   );
 };
+
+// remove this is just for testing 
+GridShop.defaultProps = {
+  Imgs: data.categories.cpu
+}
  
